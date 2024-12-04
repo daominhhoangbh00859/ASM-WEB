@@ -1,0 +1,136 @@
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container {
+    background-color: rgb(129, 207, 191);
+    border: solid 1px #000;
+    padding: 10px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+}
+
+.logo {
+    height: 50px; 
+    width: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul img {
+    height: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative; 
+}
+
+nav ul li a {
+    color: #000;
+    padding: 10px 25px; 
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 7px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.5); 
+    color: #000; 
+}
+
+img {
+    height: 220px;
+    border-radius: 50%;
+    transition: transform 0.5s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.5); 
+}
+
+nav ul li .submenu, nav ul li .document {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 999; 
+}
+
+nav ul li:hover .submenu, nav ul li:hover .document {
+    display: block;
+}
+
+.submenu li, .document li {
+    padding: 10px 15px;
+}
+
+.submenu li a, .document li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.submenu li a:hover, .document li a:hover {
+    background-color: rgba(129, 207, 191, 0.8); 
+    color: white; 
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h1 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+.about-container p.thank-you {
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+.about-container em {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-top: 20px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="nav-container">
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li class="logo">
+                        <img src="Capture.PNG" alt="logo">
+                    </li>
+                    <li class="hg1"><a href="main.html">Home</a></li>
+                    <li class="hg2"><a href="aboutwe.html">Về chúng tôi</a></li>
+                    <!-- <li class="hg3">
+                        <a href="#">Sản phẩm</a>
+                        <ul class="submenu">
+                            <li><a href="#">Thể loại sách</a></li>
+                            <li><a href="#">Sách theo ngôn ngữ</a></li>
+                            <li><a href="#">Sách giảm giá</a></li>
+                            <li><a href="#">Sách bán chạy</a></li>
+                            <li><a href="#">Sách chuyên ngành</a></li>
+                        </ul>
+                    </li>
+                    <li class="hg5"><a href="#">Tài liệu</a>
+                        <ul class="document">
+                            <li><a href="#">Tài Liệu Tiếng Anh</a></li>
+                            <li><a href="#">Ôn Thi Vào Lớp 10</a></li>
+                            <li><a href="#">Ôn Thi Đại Học</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="hg7"><a href="help.html">Hỗ trợ khách hàng</a></li>
+                    <li class="cart-icon"><a href="#"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a></li> 
+                </ul>
+            </nav>
+        </div>
+    </div>
+<!-- giohang -->
+    <div class="cart-container">
+        <h2>Giỏ Hàng của Bạn</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sản Phẩm</th>
+                    <th>Giá</th>
+                    <th>Số Lượng</th>
+                    <th>Tổng</th>
+                    <th>Thao Tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Harry Potter</td>
+                    <td>200,000 VNĐ</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>200,000 VNĐ</td>
+                    <td><button class="remove">Xóa</button></td>
+                </tr>
+                <tr>
+                    <td>Đắc Nhân Tâm</td>
+                    <td>150,000 VNĐ</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>150,000 VNĐ</td>
+                    <td><button class="remove">Xóa</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="total">
+            <h3>Tổng Cộng: <span id="total-price">350,000 VNĐ</span></h3>
+        </div>
+        <button class="checkout">Thanh Toán</button>
+    </div>
+   
+    <script src="pay.js"></script>
+</body>
+</html>
